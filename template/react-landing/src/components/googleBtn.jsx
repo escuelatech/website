@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
 import { GoogleLogin, GoogleLogout } from 'react-google-login';
-
+import Signin from '../services/authService';
 import './loginCpntCSS.css';
-// appId='657319568198782'
+// const CLIENT_ID = '58665771518-0u2ukgcpnqhvq7iahlk9a3jnhcrp6489.apps.googleusercontent.com';
 const CLIENT_ID = '637498838357-r8sr9o20385bd2bbct5nd3qo6ngo6cbo.apps.googleusercontent.com';
 
 class GoogleBtn extends Component {
@@ -18,10 +18,21 @@ class GoogleBtn extends Component {
 
     login = (response) => {
         if (response.accessToken) {
-            this.setState(state => ({
-                isLogined: true,
-                accessToken: response.accessToken
-            }));
+            console.log('google login res: ', response)
+            const uesrData = {
+                accessToken: response.accessToken,
+                email: response.profileObj.email,
+                autheticatedMedium: 'Google',
+                password: ''
+            };
+            Signin(uesrData).then((res) => {
+                this.setState(state => ({
+                    isLogined: true
+                }));
+                console.log('signin suggess: ', res.data)
+            }).catch((error) => {
+                console.log('failed signin: ', error)
+            });
         }
     }
 
