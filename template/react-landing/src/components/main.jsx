@@ -21,16 +21,16 @@ const Main = () => {
     const [details, setDetails] = useState([
         {
             id: '1',
-            link: 'https://www.youtube.com/watch?v=6ZQrpfRuQnM',
-            watch: 'https://youtu.be/s6zR2T9vn2c',
+            link: 'https://youtu.be/tW390W7M6TM',
+            watch: 'https://youtu.be/tW390W7M6TM',
             image: require('../assets/css/images/pic01.jpg'),
-            title: 'Nascetur nunc varius commodo',
-            description: 'Interdum amet accumsan placerat commodo ut amet aliquam blandit nunc tempor lobortis nunc. non Mi accumsan.'
+            title: 'Vue.js & Spring boot',
+            description: 'Video tutorial to configure File upload using VueJs and Spring boot.'
         },
         {
             id: '2',
-            link: 'https://www.youtube.com/watch?v=6ZQrpfRuQnM',
-            watch: 'https://youtu.be/s6zR2T9vn2c',
+            link: 'https://youtu.be/jfp8RJ0DsyI',
+            watch: 'https://youtu.be/jfp8RJ0DsyI',
             image: require('../assets/css/images/pic02.jpg'),
             title: 'Nascetur nunc varius commodo',
             description: 'Interdum amet accumsan placerat commodo ut amet aliquam blandit nunc tempor lobortis nunc. non Mi accumsan.'
