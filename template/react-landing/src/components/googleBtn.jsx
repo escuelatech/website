@@ -46,7 +46,6 @@ class GoogleBtn extends Component {
                 { this.state.isLogined ?
                     <GoogleLogout
                         clientId={CLIENT_ID}
-                        className='login-btn'
                         render={renderProps => (
                             <button onClick={renderProps.onClick} disabled={renderProps.disabled}>Log out</button>
                         )}
@@ -55,7 +54,6 @@ class GoogleBtn extends Component {
                     >
                     </GoogleLogout> : <GoogleLogin
                         clientId={CLIENT_ID}
-                        className='login-btn'
                         render={renderProps => (
                             <button onClick={renderProps.onClick} disabled={renderProps.disabled}>Login with Google</button>
                         )}
