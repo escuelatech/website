@@ -23,7 +23,7 @@ const Main = () => {
             id: '1',
             link: 'https://youtu.be/tW390W7M6TM',
             watch: 'https://youtu.be/tW390W7M6TM',
-            image: require('../assets/css/images/pic01.jpg'),
+            image: require('../assets/css/images/pic02.jpg'),
             title: 'Vue.js & Spring boot',
             description: 'Video tutorial to configure File upload using VueJs and Spring boot.'
         },
@@ -31,42 +31,42 @@ const Main = () => {
             id: '2',
             link: 'https://youtu.be/jfp8RJ0DsyI',
             watch: 'https://youtu.be/jfp8RJ0DsyI',
-            image: require('../assets/css/images/pic02.jpg'),
-            title: 'Nascetur nunc varius commodo',
-            description: 'Interdum amet accumsan placerat commodo ut amet aliquam blandit nunc tempor lobortis nunc. non Mi accumsan.'
+            image: require('../assets/css/images/pic04.jpg'),
+            title: 'How to deploy a Vue.js application in Tomcat Server',
+            description: 'Deployment of Vue.js application in a Tomcat server'
         },
         {
             id: '3',
-            link: 'https://youtu.be/s6zR2T9vn2c',
-            watch: 'https://youtu.be/s6zR2T9vn2c',
-            image: require('../assets/css/images/pic03.jpg'),
-            title: 'Nascetur nunc varius commodo',
-            description: 'Interdum amet accumsan placerat commodo ut amet aliquam blandit nunc tempor lobortis nunc. non Mi accumsan.'
-        },
-        {
-            id: '4',
-            link: 'https://youtu.be/s6zR2T9vn2c',
-            watch: 'https://www.youtube.com/watch?v=6ZQrpfRuQnM',
-            image: require('../assets/css/images/pic04.jpg'),
-            title: 'Nascetur nunc varius commodo',
-            description: 'Interdum amet accumsan placerat commodo ut amet aliquam blandit nunc tempor lobortis nunc. non Mi accumsan.'
-        },
-        {
-            id: '5',
-            link: 'https://youtu.be/s6zR2T9vn2c',
-            watch: 'https://youtu.be/6ZQrpfRuQnM',
+            link: 'https://youtu.be/7ny44cW5-Fo',
+            watch: 'https://youtu.be/7ny44cW5-Fo',
             image: require('../assets/css/images/pic05.jpg'),
-            title: 'Nascetur nunc varius commodo',
-            description: 'Interdum amet accumsan placerat commodo ut amet aliquam blandit nunc tempor lobortis nunc. non Mi accumsan.'
+            title: 'How to enable Java 14 features in intellij idea',
+            description: 'A tutorial to enable Java 14 record feature in intellij.'
         },
-        {
-            id: '6',
-            link: 'https://youtu.be/6ZQrpfRuQnM',
-            watch: 'https://youtu.be/6ZQrpfRuQnM',
-            image: require('../assets/css/images/pic06.jpg'),
-            title: 'Nascetur nunc varius commodo',
-            description: 'Interdum amet accumsan placerat commodo ut amet aliquam blandit nunc tempor lobortis nunc. non Mi accumsan.'
-        }
+        // {
+        //     id: '4',
+        //     link: 'https://youtu.be/s6zR2T9vn2c',
+        //     watch: 'https://www.youtube.com/watch?v=6ZQrpfRuQnM',
+        //     image: require('../assets/css/images/pic04.jpg'),
+        //     title: 'Nascetur nunc varius commodo',
+        //     description: 'Interdum amet accumsan placerat commodo ut amet aliquam blandit nunc tempor lobortis nunc. non Mi accumsan.'
+        // },
+        // {
+        //     id: '5',
+        //     link: 'https://youtu.be/s6zR2T9vn2c',
+        //     watch: 'https://youtu.be/6ZQrpfRuQnM',
+        //     image: require('../assets/css/images/pic05.jpg'),
+        //     title: 'Nascetur nunc varius commodo',
+        //     description: 'Interdum amet accumsan placerat commodo ut amet aliquam blandit nunc tempor lobortis nunc. non Mi accumsan.'
+        // },
+        // {
+        //     id: '6',
+        //     link: 'https://youtu.be/6ZQrpfRuQnM',
+        //     watch: 'https://youtu.be/6ZQrpfRuQnM',
+        //     image: require('../assets/css/images/pic06.jpg'),
+        //     title: 'Nascetur nunc varius commodo',
+        //     description: 'Interdum amet accumsan placerat commodo ut amet aliquam blandit nunc tempor lobortis nunc. non Mi accumsan.'
+        // }
     ]);
 
     return (

@@ -3,21 +3,23 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import { Redirect } from 'react-router';
 import logo from './logo.svg';
 
-import './App.css';
-import './assets/css/font-awesome.min.css';
-import './assets/css/main.css';
+// import './App.css';
+// import './assets/css/font-awesome.min.css';
+// import './assets/css/main.css';
 
 import Landing from './pages/landing';
 import Login from './pages/login/login';
+import DashBoard from './pages/secured/dashboard';
 
 function App() {
     return (
         <div>
-            <Router>
+            <Router basename={'/homepage'}>
                 <Switch>
-                    <Route exact path="/" render={() => <Redirect to='login' />}></Route>
+                    <Route exact path="/" render={() => <Redirect to='landing' />}></Route>
                     <Route exact path="/landing" component={Landing}></Route>
                     <Route exact path="/login" component={Login}></Route>
+                    <Route exact path="/dashboard" component={DashBoard}></Route>
                 </Switch>
             </Router>
         </div>
