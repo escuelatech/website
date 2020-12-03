@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import mainService from "../services/mainService.jsx";
+import videoService from "../services/videoService.jsx";
 
 const Box = (props) => {
     return (
@@ -24,7 +24,7 @@ const Main = () => {
     const [details, setDetails] = useState([]);
 
     useEffect(() => {
-        mainService.getAllVideos()
+        videoService.getAllVideos()
                 .then(response => {
                  setDetails(response.data);
                  console.log("Details:", response.data);
