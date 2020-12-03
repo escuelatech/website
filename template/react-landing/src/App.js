@@ -10,6 +10,7 @@ import logo from './logo.svg';
 import Landing from './pages/landing';
 import Login from './pages/login/login';
 import DashBoard from './pages/secured/dashboard';
+import AddVideo from './pages/addVideo';
 
 function App() {
     return (
@@ -20,6 +21,7 @@ function App() {
                     <Route exact path="/landing" component={Landing}></Route>
                     <Route exact path="/login" component={Login}></Route>
                     <Route exact path="/dashboard" component={DashBoard}></Route>
+                    <Route path="/addvideo" component={AddVideo}></Route>
                 </Switch>
             </Router>
         </div>
